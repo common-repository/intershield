@@ -1,0 +1,250 @@
+a {
+    text-decoration: none;
+}
+
+#scan_section a, #configuration_check_section a, #check_unknown_files_section a, #update_bad_ip_list_section a {
+    text-decoration: none;
+}
+
+.successMsg {
+    color: green;
+}
+
+.errorMsg {
+    color: red;
+}
+
+.infoMsg, .show_date {
+    color: blue;
+}
+
+.stop_button {
+    display: none;
+}
+
+/***MAIN MENU***/
+#scan_section {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+}
+
+#scan_section input {
+    margin: 15px;
+}
+
+.last_scanned_files_info {
+    margin-bottom: 4%;
+}
+
+#information_section > div {
+    width: 90%;
+    margin: 2% 0;
+}
+
+.current_malware_file_section {
+    display: flex;
+    align-items: center;
+}
+
+.current_malware_file_section > div {
+    margin: 10px;
+}
+
+#loadGoodFiles {
+    margin-bottom: 15px;
+}
+
+.good_files_list {
+    display: none;
+}
+
+.good_files_list p {
+    color: green;
+    margin-top: 0;
+}
+
+/*****POPUP IN MAIN MENU****/
+.popupParent {
+    display: none;
+    width: 100%;
+    height: max-content ;
+    z-index: 9999;
+}
+
+/* The actual popup */
+.popupParent .popuptext {
+    visibility: hidden;
+    width: 80%;
+    background-color: #555;
+    color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+/* Popup arrow */
+.popupParent .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popupParent .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.popupToggle {
+    border-radius: 50%;
+
+}
+
+.popupToggle img {
+    width: 25px;
+    height: 20px;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/***SETTINGS MENU***/
+#settings_section {
+    margin-top: 5vh;
+}
+
+.save_settings_section {
+    width: 60%;
+    text-align: right;
+}
+
+#settings_section table {
+    width: 60%;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 2px solid #ccc;
+}
+
+#settings_section table td {
+    width: 50%;
+}
+
+.firewall_table .toggle_section {
+    display: none;
+}
+
+.interrogative_badge_parent {
+    display: flex;
+    align-items: center;
+}
+
+.interrogative_badge {
+    width: 10%;
+    margin-left: 5%;
+}
+
+#forbidden_link_page_section {
+    display: flex;
+    align-items: center;
+}
+
+.forbidden_link {
+    width: 90%;
+}
+
+.delete_forbidden_link {
+    width: 2.5%;
+}
+
+.delete_forbidden_link a {
+    display: block;
+    overflow: auto;
+}
+
+#forbidden_link_page_section img {
+    width: 100%;
+}
+
+/***PROGRESS BAR FOR SCAN***/
+#progressbar_section {
+    width: 80%;
+    margin: auto;
+}
+
+#progressbar .ui-widget-header {
+    background: #2a9e4a;
+}
+
+/***CONFIGURATION-CHECK MENU***/
+#configuration_check_section {
+    margin: 5% auto;
+}
+
+/***CHECK UNKNOWN FILES MENU***/
+#check_unknown_files_section {
+    margin: 5% auto;
+}
+
+.unknown_files_list {
+    margin-bottom: 7vh;
+}
+
+#check_unknown_files_section a {
+    margin-left: 1%;
+    font-size: 20px;
+}
+
+.current_file_info {
+    display: none;
+    cursor: pointer;
+}
+
+/***UPDATE BAD IP LIST MENU***/
+#update_bad_ip_list_section {
+    margin: 5% auto;
+}
+
+#update_bad_ip_list_section > div {
+    margin-bottom: 10vh;
+}
+
+.bad_ip_list {
+    display: none;
+}
+
+/***Media Screen***/
+@media only screen and (max-width: 1200px) {
+    #settings_section table, .save_settings_section {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .interrogative_badge {
+        width: 20%;
+        margin-left: 20%;
+    }
+}
